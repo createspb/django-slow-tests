@@ -1,8 +1,6 @@
-from django.core.exceptions import ImproperlyConfigured
-
 try:
     from testrunner import DiscoverSlowestTestsRunner  # NOQA
-except (ImportError, ImproperlyConfigured):
+except ImportError:
     pass
 
 __version__ = "0.4.0"
